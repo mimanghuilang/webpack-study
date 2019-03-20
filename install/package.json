@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "name": "install",
+  "version": "1.0.0",
+  "description": "just for practice",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack"
+  },
+  "author": "jm",
+  "license": "ISC",
+  "dependencies": {
+    "loadsh": "^0.0.4"
+  }
+}

@@ -1,0 +1,11 @@
+前提条件
+    node.js npm
+本地安装
+    npm init -y
+    npm install --save-dev webpack
+    npm install --save-dev webpack-cli
+
+调整package.json
+    "private":true,
+    去掉main.js
+
