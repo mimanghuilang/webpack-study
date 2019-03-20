@@ -5,7 +5,19 @@
     npm install --save-dev webpack
     npm install --save-dev webpack-cli
 
+// 安装
 调整package.json
     "private":true,
     去掉main.js
+    脚本 "build":'webpack'
+
+// 安装lodash
+    cnpm install lodash --save
+
+// 新建webpack.config.js
+
+// 新建dist文件，新建index.html
+
+// 运行命令
+    cnpm run build
 
