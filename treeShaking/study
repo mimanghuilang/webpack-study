@@ -1,0 +1,15 @@
+是否有副作用
+    没有
+        sideEffects：false
+        当没有引用的会自动删除
+    有副作用
+        指定到对应的文件
+
+    还可以在 module.rules 配置选项 中设置 "sideEffects"
+
+
+压缩输出
+    我们已经可以通过 import 和 export 语法，找出那些需要删除的“未使用代码(dead code)”，然而，我们不只是要找出，还需要在 bundle 中删除它们
+    我们将使用 -p(production) 这个 webpack 编译标记，来启用 uglifyjs 压缩插件
+    设置
+        mode: "production"
