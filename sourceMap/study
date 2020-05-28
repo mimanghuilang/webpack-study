@@ -1,2 +1,10 @@
 配置修改
+soureMap
 +   devtool: 'inline-source-map',
+使用观察模式
++   "watch": "webpack --watch",
+使用 webpack-dev-server
++   devServer: {
++     contentBase: './dist'
++   },
+
