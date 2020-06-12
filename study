@@ -1,0 +1,76 @@
+# webpack-study
+just for webpack study
+
+1、安装+起步（略） install
+    安装：略
+    起步：
+        1、创建bundle,npx webpack
+            默认入口文件为src/index.js
+            默认输出文件为dist/main.js
+        2、使用一个配置文件，管理入口文件和输出文件
+            略
+
+2、管理资源 assetManagement
+    加载css
+        为了从 JavaScript 模块中 import 一个 CSS 文件，你需要在 module 配置中 安装并添加 style-loader 和 css-loader：
+        npm install --save-dev style-loader css-loader
+    加载图片,加载字体
+        npm install --save-dev file-loader
+    加载数据
+        npm install --save-dev csv-loader xml-loader
+
+3、管理输出 assetOutput
+    clean-webpack-plugin（npm install clean-webpack-plugin --save-dev）
+    HtmlWebpackPlugin（npm install --save-dev html-webpack-plugin）
+    Manifest：一个依赖字典
+
+4、开发 development
+    1、sourceMap
+        devtool: 'inline-source-map',
+    2、观察模式（注意：开发工具有安全写入功能），每次编译代码手动运行npm run build会变得很麻烦
+        1、webpack's Watch Mode（例1）
+        2、webpack-dev-server（例2）
+        3、webpack-dev-middleware（例3）
+        多数场景中，你可能需要使用 webpack-dev-server，但是不妨探讨一下以上的所有选项。
+            例1："watch": "webpack --watch"
+                 缺点需要手动刷新浏览器
+            例2：
+                npm install --save-dev webpack-dev-server
+                +   devServer: {
+                +     contentBase: './dist'
+                +   },
+                +     "start": "webpack-dev-server --open",
+                以上配置告知 webpack-dev-server，在 localhost:8080 下建立服务，将 dist 目录下的文件，作为可访问文件。
+            例3：
+                npm install --save-dev express webpack-dev-middleware
+        总结：webpack-dev-server 是封装好的，除了 webpack.config 和命令行参数之外，很难去做定制型开发。
+        下节预告：webpack-hot-middleware：
+                  是一个结合webpack-dev-middleware使用的middleware，它可以实现浏览器的无刷新更新（hot reload），这也是webpack文档里常说的HMR（Hot Module Replacement）。HMR和热加载的区别是：热加载是刷新整个页面。
+
+5、模块热替换
+    模块热替换(Hot Module Replacement 或 HMR)是 webpack 提供的最有用的功能之一。
+   1、启用HMR
+        如果你使用了 webpack-dev-middleware 而没有使用 webpack-dev-server，请使用 webpack-hot-middleware package 包，以在你的自定义服务或应用程序上启用 HMR。
+        例子：
+                devServer: {
+                  contentBase: './dist',
+            +     hot: true
+                },
+                    plugins: [
+                      new CleanWebpackPlugin(['dist']),
+                      new HtmlWebpackPlugin({
+                        title: 'Hot Module Replacement'
+                      }),
+                +     new webpack.NamedModulesPlugin(),
+                +     new webpack.HotModuleReplacementPlugin()
+                    ],
+                    
+
+
+
+
+
+
+
+
+
