@@ -1,0 +1,7 @@
+1、项目初始化
+npm init
+2、安装webpack, webpack 是核心模块，webpack-cli 则是命令行工具
+npm install webpack webpack-cli --save-dev
+2、测试是否已经安装完成
+npx webpack -v 以及 npx webpack-cli -v
+3、打包第一个应用
