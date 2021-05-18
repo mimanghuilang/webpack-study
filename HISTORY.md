@@ -42,3 +42,6 @@
 * 完善样例
 * webpack起步
 * Initial commit
+
+### 1.0.1
+* fix:提价history
