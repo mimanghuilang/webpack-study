@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/mimanghuilang/webpack-study/compare/v1.0.2...v1.0.3) (2021-06-02)
+
+
+### Bug Fixes
+
+* 修改文档 ([b690a30](https://github.com/mimanghuilang/webpack-study/commit/b690a305b465664a0a327aa7a6bfc9139e6e36dd))
+
 ### [1.0.2](https://github.com/mimanghuilang/webpack-study/compare/v1.0.1...v1.0.2) (2021-06-02)
 
 ### 1.0.1 (2021-06-02)
