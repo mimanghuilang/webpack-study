@@ -1,4 +1,11 @@
 Xot ChangeLog
+### [1.0.7](https://github.com/mimanghuilang/webpack-study/compare/v1.0.6...v1.0.7) (2021-06-02)
+
+
+### 问题修复
+
+* 添加翻译 ([0639cf9](https://github.com/mimanghuilang/webpack-study/commit/0639cf9a7c2fb563e3f08f51fb2e89d041991558))
+
 ### [1.0.6](https://github.com/mimanghuilang/webpack-study/compare/v1.0.5...v1.0.6) (2021-06-02)
 
 ### [1.0.5](https://github.com/mimanghuilang/webpack-study/compare/v1.0.4...v1.0.5) (2021-06-02)
